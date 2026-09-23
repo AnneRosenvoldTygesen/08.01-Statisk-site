@@ -1,0 +1,148 @@
+/***** STYLING AF PRODUKT DESKTOP *****/
+
+/***** STYLING AF PRODUKT DESKTOP *****/
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 40px 7% 80px;
+}
+
+.product_title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/***** SINGLE PRODUCT *****/
+
+.single_product {
+  border: 1px solid #020200;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 50px;
+  padding: 30px;
+}
+
+/***** PRODUCT IMAGE *****/
+
+.product_images {
+  display: grid;
+  place-items: center;
+}
+
+.main_product_image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+/***** PRODUCT INFORMATION *****/
+
+.product_information {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-content: start;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.product_information h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+.product_details {
+  display: grid;
+  gap: 8px;
+}
+
+.product_information p {
+  margin: 0;
+}
+
+.product_information button {
+  margin-top: 25px;
+}
+
+.size_selection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.size_selection p {
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.size_selection button {
+  background-color: white;
+  border: 1px solid #020200;
+  padding: 10px 18px;
+  margin-bottom: 15px;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.size_selection button.selected {
+  background-color: #020200;
+  color: white;
+}
+
+/***** BUTTON *****/
+
+.product_information button {
+  background-color: #3d2b8f;
+  color: white;
+
+  border: none;
+  border-radius: 15px;
+
+  padding: 15px 30px;
+
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  justify-self: start;
+}
+
+/***** MOBILE *****/
+
+@media (max-width: 700px) {
+  main {
+    padding: 30px 5% 60px;
+  }
+
+  .product_title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .single_product {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 15px;
+  }
+
+  .product_information h2 {
+    font-size: 1.6rem;
+  }
+
+  .product_information button {
+    width: 100%;
+  }
+}

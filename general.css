@@ -13,25 +13,6 @@ img {
   max-width: 100%;
 }
 
-/* HEADER STYLING MOBILE */
-@media (max-width: 700px) {
-  header {
-    width: 100%;
-    height: 130px;
-    padding: 0;
-  }
-
-  .logo {
-    width: 190px;
-    margin-left: -10px;
-  }
-
-  .header_image {
-    width: 90px;
-    margin-right: 30px;
-  }
-}
-
 /**** HEADER STYLING DESKTOP ****/
 header {
   background-color: #f8f7e8;
@@ -46,7 +27,7 @@ header {
 }
 
 .logo {
-  width: 330px;
+  width: 380px;
   height: auto;
   margin-left: 20px;
 }
@@ -57,18 +38,39 @@ header {
   margin-right: 60px;
 }
 
+/* HEADER STYLING MOBILE */
+@media (max-width: 700px) {
+  header {
+    width: 100%;
+    height: 130px;
+    padding: 0;
+  }
+
+  .logo {
+    width: 200px;
+    margin-left: -5px;
+  }
+
+  .header_image {
+    width: 90px;
+    margin-right: 30px;
+  }
+}
 /**** STYLING AF BODY FORSIDE DESKTOP ****/
 
 h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 2rem;
+  font-weight: 400;
+  color: #020200;
 }
 
 .section_title {
-  margin-left: 90px;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  margin-left: 220px;
+  padding-top: 45px;
+  padding-bottom: 0px;
 }
+
 .category_box span {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5rem;
@@ -78,18 +80,6 @@ h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
 }
-
-/* .section_title {
-  margin-left: 90px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-} */
-/* 
-.category_box {
-  position: relative;
-  display: block;
-  overflow: hidden;
-} */
 
 .category_box {
   position: relative;
@@ -103,12 +93,8 @@ h1 {
   aspect-ratio: 5 / 7;
   object-fit: contain;
   display: block;
+  border: 1px solid #020200;
 }
-
-/* .category_box img {
-  width: 100%;
-  display: block;
-} */
 
 .category_box span {
   position: absolute;
@@ -151,9 +137,17 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+
+  .section_title {
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 /**** FOOTER ***/
+
 /***** FOOTER STYLING DESKTOP *****/
 
 footer {
@@ -162,10 +156,10 @@ footer {
   min-height: 250px;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 
-  padding: 0 7%;
+  padding: 20px 7%;
 }
 
 .footer_contact,
@@ -180,6 +174,7 @@ footer {
 .footer_social h3 {
   margin-bottom: 10px;
 }
+
 /***** FOOTER STYLING MOBILE *****/
 
 @media (max-width: 700px) {

@@ -1,13 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-}
-
+/***** STYLING AF PRODUKTLISTE DESKTOP *****/
 .section_title_productlist {
   margin-left: 20px;
   padding-top: 30px;
@@ -28,8 +19,21 @@ img {
   grid-template-rows: subgrid;
   grid-row: span 5;
   position: relative;
+  border: 1px solid #020200;
 }
 
+.product h3,
+.product > p,
+.product > div {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.product a {
+  color: #020200;
+  font-style: italic;
+}
 .soldout_tag {
   visibility: hidden;
 }
@@ -73,4 +77,14 @@ img {
   border-radius: 50%;
 
   font-size: 1.5rem;
+}
+
+/*** STYLING AF PRODUKTLISTE MOBILE ***/
+@media (max-width: 700px) {
+  .section_title_productlist {
+    margin-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+  }
 }
