@@ -18,27 +18,18 @@ function showProducts(products) {
   listContainer.innerHTML = ""; /***** sikrer at den er tom på siden */
 
   products.forEach((product) => {
-    // let soldOutClass = "";
-
-    // if (product.soldout) {
-
-    //   soldOutClass = "soldout";
-    // }
-
     listContainer.innerHTML += `
-    <article class="product">
-                <img src="img/produktview_sonja.webp" alt="Loafer Sonja">
+    <article class="product ${product.soldout ? "soldout" : ""}">
+                <img src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="Image">
 
-                <h3>Sonja loafer</h3>
-                <p>Loafers</p>
+                <h3>${product.productdisplayname}</h3>
+                <p>${product.brandname} - ${product.category}</p>
                 <div>
                     <p>DKK 1500</p>
                 </div>
                 <p><a href="product.html">Read More</a></p>
-                <p class="soldout_tag">Sold Out</p>
+                ${product.soldout ? " <p class='soldout_tag'>Sold Out</p>" : ""}
             </article>
-
-
 `;
   });
 }
