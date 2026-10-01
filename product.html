@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="product.css">
-    <script src="index.js" defer></script>
+    <script src="product.js" defer></script>
 
     <title>Single product</title>
 </head>
@@ -23,42 +23,31 @@
 
     <main>
 
-        <h1 class="product_title">Sonja loafer</h1>
+        <button class="back_button" onclick="history.back()">← Tilbage til produkter</button>
 
-        <section class="single_product">
-
-            <div class="product_images">
-                <img src="img/produktside_sonja_1.webp" alt="Sonja loafer" class="main_product_image">
-            </div>
-
+        <div class="product_container">
+            <img class="product_image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="Product image">
             <div class="product_information">
-
-                <h2>Produkt information</h2>
-
-                <div class="product_details">
-                    <p><strong>Price:</strong> 1500 dkk</p>
-                    <p><strong>Model:</strong> Sonja loafer, Interwoven T-Bar Loafer</p>
-                    <p><strong>Color:</strong> Dark brown</p>
-                    <p><strong>Material:</strong> Leather outsole with stacked leather heel</p>
-
-
-                    <div class="size_selection">
-                        <p><strong>Size:</strong></p>
-
-                        <button type="button">37</button>
-                        <button type="button">38</button>
-                        <button type="button">39</button>
-                        <button type="button">40</button>
-                        <button type="button">41</button>
-                    </div>
-                </div>
-
-                <button class="add_to_basket" type="button">Add to basket</button>
-
+                <h2>Product Information</h2>
+                <p>Model</p>
+                <p><span class="detail_model">Sahara Team India Fanwear Round Neck Jersey</span></p>
+                <p>Color</p>
+                <p><span class="detail_color">Blue</span></p>
+                <p>Description</p>
+                <p><span class="detail_description">Blue round neck Sahara Team India jersey, has short sleeves, print
+                        on
+                        the
+                        chest and back
+                        chest<br><br>Warranty for manufacturing defects: 6 months (not valid on products with more than
+                        20%
+                        discount)</span></p>
             </div>
-
-        </section>
-
+            <div class="order_product">
+                <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+                <p>Nike - Apparel</p>
+                <button class="order_button">Add to basket</button>
+            </div>
+        </div>
     </main>
 
 
